@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FoodRecipeApp</string>
+    <string name="splash_screen_image">splash screen image</string>
+    <string name="intro_text_for_app"> This  App uses Edamam API services.
+        It has several features like Recipe Search, Food Database, Nutrition Analysis.
+        Soon, the app will be powered with more new features like personalized recipe prediction
+        based on your search and recommended healthy recipe. Currently we\'ve limited search result
+        for every search due to API restriction usage, soon it\'ll be increased on.</string>
+    <string name="food_recipe">Food Recipe</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s\,
+        when an unknown printer took a galley of type and
+</string>
+    <string name="services">Services</string>
+    <string name="recipe_search">Recipe Search</string>
+    <string name="try_now">try now</string>
+    <string name="made_with_in_india">Made With ❤ In India</string>
+    <string name="welcome_to_my_recipe_world">Welcome To My Recipe World</string>
+    <string name="search_for_any_recipe_you_wish">Search for any recipe you wish</string>
+    <string name="find_best_recipes">Find best recipes</string>
+    <string name="search">Search</string>
+    <string name="food_image">food image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingredient">Ingredients</string>
+    <string name="recipe_url">Recipe Url</string>
+</resources>

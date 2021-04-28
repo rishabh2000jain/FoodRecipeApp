@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".recipeSearchScreen.RecipeSearchActivity"
+    android:padding="@dimen/common_padding10"
+    >
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_my_recipe_world"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/text_underline"
+            android:layout_width="@dimen/text_underlie_width"
+            android:layout_height="@dimen/text_underlie_height"
+            android:layout_below="@id/title_text"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green" />
+
+        <TextView
+            android:id="@+id/search_for_recipe_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_underline"
+            android:layout_marginTop="@dimen/common_margin20"
+            android:text="@string/search_for_any_recipe_you_wish"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_text_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/recipe_search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_search_edit_text_height"
+            android:layout_below="@id/search_for_recipe_title"
+            android:layout_marginTop="@dimen/common_margin20"
+            android:background="@drawable/recipe_search_bg"
+            android:hint="@string/find_best_recipes"
+            android:importantForAutofill="no"
+            android:padding="@dimen/common_padding10"
+            android:textColorHint="@color/grey"
+            android:inputType="text"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_recipe_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipe_search_edt"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/common_margin20"
+            android:background="@drawable/button_bg"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/common_text_size" />
+
+
+    <ImageView
+        android:id="@+id/fast_food_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recipe_image_height"
+        android:layout_below="@id/search_recipe_btn"
+        android:layout_marginStart="@dimen/common_margin20"
+        android:layout_marginTop="@dimen/common_margin20"
+        android:layout_marginEnd="@dimen/common_margin20"
+        android:src="@drawable/fast_food_icon_black"
+        />
+
+    <include
+        android:id="@+id/made_with_love"
+        layout="@layout/made_with_love_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/made_with_love_block_height"
+        android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
